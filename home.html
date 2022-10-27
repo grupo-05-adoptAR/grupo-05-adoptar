@@ -31,7 +31,7 @@
       <li class="item"><a href="salud.html" class="link-item">salud</a></li>
       <li class="item"><a href="proyecto.html" class="link-item">Proyecto</a></li>
       <li class="item"><a href="adoptar.html" class="link-item">Adoptar</a></li>
-      <li class="item"><a href="contacto.html" class="link-item">Contacto</a></li>
+      <li class="item"><a href="home.html#contacto" class="link-item">Contacto</a></li>
       <li class="item"><a href="snakeGame.html" class="link-item">snakeGame</a></li>
 
     </ul>
@@ -54,7 +54,7 @@
 
 
         <a href="adoptar.html"
-        " class="divX4"><img src="img/pets/dog2.png" alt="img ruta adoptar" class="imgGallery gallery04"/></a>
+         class="divX4"><img src="img/pets/dog2.png" alt="img ruta adoptar" class="imgGallery gallery04"/></a>
 
         <a href="proyecto.html" class="divX4"> <img src="img/pets/pet02.png" alt="imagem ruta pagina proyecto"
             class="imgGallery gallery06"/></a>
@@ -88,8 +88,43 @@
         </p>
         <a href="adoptar.html" class="css-button-shadow-border-sliding--green">PESQUISAR Adopcion</a>
       </article>
-    </main>
-  </div>
+    
+  
+<section>    <form action="https://formsubmit.co/9b53b84a2d7af63d457b12c2cc1f4e21" method="POST" id="contacto"/>
+  <fieldset>
+          <legend>Info Personal</legend>
+          <div class="data__container">
+              <label for="nombreCompleto">Ingrese su Nombre y Apellido</label>
+              <input type="text" name="nombreCompleto" id="nombreCompleto" required="">
+          </div>
+          <div class="data__container">
+              <label for="email">Ingrese su Email</label>
+              <input type="mail" name="email" id="email" required="">
+          </div>
+      </fieldset>
+      <fieldset>
+          <legend>Tema y Mensagem</legend>
+          <div class="data__container">
+              <label for="selectTema">Selecione el Asunto</label>
+              <select type="select" name="selectTema" id="selectTema" required>
+                  <option  selected disabledd>Seleccione TEMA</option>
+                  <option value="dudasReclamos">Dudas y Reclamos</option>
+                  <option value="sugestiones">Sugestiones</option>
+                  <option value="contactoProfesional">Contacto Profesional</option>
+                  <option value="otros">OTROS</option>
+              </select>    
+          </div>
+          <div class="data__container">
+              <textarea name="mensagemContacto" id="mensagemContacto" cols="30" rows="10"></textarea>
+              </div>
+      </fieldset>
+              <button class="css-button-shadow-border-sliding--green" type="submit" >Enviar Mensagem</button>
+          </div>
+
+  </form></section>
+</main>
+    </div>
+  <footer>
   <ul class="social-icons-list">
     <li>
       <a href="#" class="social-link"><i class="fa-solid fa-arrow-up"></i>TOPO</a>
@@ -105,6 +140,8 @@
 
   </footer>
   <script src="js/navbar.js"></script>
+  <script src="js/formValidacion.js"></script>
+
 </body>
 
 </html>

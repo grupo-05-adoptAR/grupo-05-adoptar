@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../mi-sitio/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../mi-sitio/favicon-16x16.png">
+<link rel="manifest" href="../mi-sitio/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+<title>Home</title>
+</head>
+<body>
+ <style>
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 1rem;
+}
+
+  body{
+    min-height: 100vh;
+  height: 100%;
+}
+
+
+
+body, header, main , section, footer, header{
+  border: 3px solid red;
+  min-height: 50px;
+  margin: 0.5rem;
+
+  min-width: 400px;
+  max-width: 1440px;
+}
+
+
+.menu
+{
+ background: rgb(217, 255, 3);
+  font-weight: bolder;
+  font-size: 1.4rem;
+  border-left: 4px solid rgb(6, 43, 0);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  width: 100%;
+  height: 85px;
+  align-self: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0 , 0, .6);
+  max-width: 1340px;
+z-index: 0;
+  left: 0;
+  top: 0.2px;
+    position: fixed;
+
+}
+header{
+  text-align: center;
+}
+
+.menu__item{
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.item{
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin: 0 5px;
+}
+.link-item{
+  padding:  2px 11px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  color: rgb(16, 6, 6);
+  width: 100px;
+}
+
+li.item:hover, li.active:hover{
+  background-color: rgb(217, 255, 1);
+  text-decoration: underline;
+  text-decoration-thickness:  2px;
+  text-decoration-style:solid;
+  text-decoration-color:rgb(221, 255, 0)  ;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  -moz-text-decoration-style: solid   ;
+  -moz-text-decoration-color:aquamarine  ;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: yellow;
+}
+
+
+.btn__menu{
+  margin-right:80px;
+  font-size: 25px;
+  color: rgb(255, 0, 68);
+  cursor: pointer;
+  display: none;
+  z-index: 10;
+}
+
+
+
+i{
+
+  font-size: 25px;
+
+}
+.show{
+ 
+  display: inline-flex;
+flex-direction: column;
+flex-flow: wrap;
+color: red;
+width: 100%;
+font-size: 25px;
+
+  }
+
+
+
+ul li{
+  list-style-position: inside;
+}
+main{
+  margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+
+  min-height: 200px;
+width: 90%;
+  border: 2px solid fuchsia;
+}
+
+.article-Main img{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+
+aside{
+    display: flex;
+flex-flow: column wrap;
+  width: 7.5%;
+  border: 6px solid blue;
+  min-height: 100px;
+  margin: 0.5rem
+}
+
+
+section{
+    display: flex;
+flex-flow: columnn wrao;
+width: 85%;
+}
+.section-All{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.section-All  img{
+  height: 100px;
+  width: 90%;
+margin-left: 5%;
+object-fit: cover;
+}
+.section-All article{
+
+  display: flex;
+  flex-flow: row wrap;
+  width: 300px;
+  height: 340px;
+  background-color: #ffdc00;
+  align-items: center;
+  border-radius: 15px;
+  color: black;
+  border: 2px solid darkorange;
+  box-shadow: 5px 5px 1.3px 2px rgba(250, 74, 0, 0.8);
+  padding: 0.44rem;
+  margin: 30px auto;
+}
+
+
+
+@media screen and (max-width: 920px){
+  main aside{
+    width: 5%;
+    font-size: 0.5rem;
+  }
+
+  main aside img {
+    width: 50%;
+  }
+.article-Main{
+width:inline-flex;
+  object-fit: contain;
+}
+}
+
+@media screen and (max-width: 720px){
+  aside{
+    display: none;
+  }
+
+  .section-Main, .section-Main img{
+    width: 50%;
+
+  }
+
+ main {
+  width: 70%;
+  max-width: 300px;
+  }
+}
+
+
+/* footer */
+
+.social-icons-list, .social-link{
+  display: flex;
+width: 100%;
+  height: 100%;
+
+  height: 4rem;
+  justify-content: space-around;
+  align-items: center;
+
+  align-self: center;
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(5, 70, 5);
+
+  font-size: 2.44rem;
+
+  background-color: rgb(233, 230, 83);
+}
+
+.social-link :hover{
+  color: #ffbb00;
+  font-weight: 900px;
+  font-size: 2rem;
+
+}
+
+.menu{
+  background-color: rgb(216, 243, 211);
+  display: inline-flex;
+  width: 95%;
+  height: 85px;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0 , 0, .6);
+  margin-left: 2.5%;
+  position: fixed;
+}
+
+
+.menu__item{
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.item{
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin: 0 5px;
+}
+.link-item{
+  padding:  2px 11px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  color: rgb(16, 6, 6);
+  width: 100px;
+}
+
+li.item:hover, li.active:hover{
+  background-color: rgb(217, 255, 1);
+  text-decoration: underline;
+  text-decoration-thickness:  2px;
+  text-decoration-style:solid;
+  text-decoration-color:rgb(221, 255, 0)  ;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  -moz-text-decoration-style: solid   ;
+  -moz-text-decoration-color:aquamarine  ;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: yellow;
+}
+
+
+.btn__menu{
+  margin-right:80px;
+  font-size: 25px;
+  color: rgb(255, 0, 68);
+  cursor: pointer;
+  display: none;
+}
+
+
+
+i{
+
+  font-size: 25px;
+
+}
+.show{
+
+  display: inline-flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  color: red;
+  width: 100%;
+  font-size: 25px;
+
+}
+
+
+/* reestruccturacion nav*/
+
+
+.title-header {
+  height: 35%;
+  padding-top: 5%;
+  align-self: center;
+}
+
+.menu-icon {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.line-1,
+.line-3 {
+  width: 1.8rem;
+  transition: all .4s;
+}
+
+.menu-icon:hover .line {
+  width: 2.5rem;
+}
+/* ****************************************** */
+h1.header__h1{
+  text-align: center;
+  font-family: 'Fredoka One' ,cursive; color: #ffffff;
+  text-shadow: 2px 6px  0.5px #000000;font-size: 5em;
+  align-self: center;
+  font-size: 7rem;
+}
+
+.element-1 {
+  box-shadow:
+          12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+          -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.css-button-shadow-border-sliding--green {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #57cc99;
+  z-index: 1;
+}
+
+
+.css-button-shadow-border-sliding--green:hover:after {
+  width: 100%;
+  left: 0;
+}
+.css-button-shadow-border-sliding--green:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  background-color: #80ed99;
+  right: 0;
+}
+.css-button-shadow-border-sliding--green:active {
+  top: 2px;
+}
+
+.css-button-neumorphic {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  align-self: center;
+  color: #585858;
+  text-decoration: none;
+}
+.css-button-neumorphic:active {
+  box-shadow: inset 1px 1px 3px #007836, inset -1px -1px 3px #fff;
+}
+
+@media screen and (max-width: 858px){
+
+
+
+  .menu{
+    height: 65px;
+  }
+
+  .btn__menu{
+    display: inline-flex;
+    color: rgb(255, 0, 0);
+
+  }
+
+  .menu__item{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    max-height: calc(100% - 65px);
+    background-color: rgb(255, 228, 72);
+    top: 65px;
+    text-align: start;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    display: none;
+    margin-right: 40px;
+
+  }
+
+  .item{
+    display: block;
+    line-height: 30px 0 0 0 ;
+    width: 100%;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .menu__item .item :hover{
+    background: none;
+  }
+
+  .menu__item .item .link-item{
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+  }
+
+  .menu__item .item .link-item :hover{
+    color: rgb(0, 18, 0);
+    background-color: rgb(255, 217, 0);
+  }
+
+  .logoBrand{
+    padding-left: 15px;
+    height: 50px;
+
+  }
+  h1{
+
+    font-size: 2rem;
+  }
+  .hero50 p{
+    width: 100%;
+    height: 70%;
+    transform-origin: translateX(-350%);
+  }
+}
+
+
+
+
+@media screen and (max-width: 858px){
+
+
+
+  .menu{
+    height: 65px;
+  }
+
+  .btn__menu{
+    display: inline-flex;
+  }
+
+  .menu__item{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    max-height: calc(100% - 65px);
+    background-color: rgb(195, 255, 0);
+    top: 65px;
+    text-align: start;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    display: none;
+    margin-right: 40px;
+
+  }
+
+  .item{
+    display: block;
+    line-height: 30px 0 0 0 ;
+    width: 100%;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .menu__item .item :hover{
+    background: none;
+  }
+
+  .menu__item .item .link-item{
+    font-size: 20px;
+    color:rgb(9, 3, 3);
+    font-weight: bold;
+  }
+
+  .menu__item .item .link-item :hover{
+    color: rgb(0, 18, 0);
+    background-color: rgb(223, 255, 182);
+  }
+
+  .logoBrand{
+    padding-left: 15px;
+    height: 50px;
+
+  }
+  h1{
+
+    font-size: 2.5rem;
+  }
+
+  .hero50{
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+  }
+
+  .hero50 img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .article-anti{
+    min-height: 300px;
+  }
+
+  .article-anti img{
+    min-width: 150px;
+    object-fit: cover ;
+  }
+
+
+}
+
+@media screen and (max-width: 858px){
+
+
+
+  .menu{
+    height: 65px;
+  }
+
+  .btn__menu{
+    display: inline-flex;
+    color: rgb(255, 0, 0);
+
+  }
+
+  .menu__item{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    max-height: calc(100% - 65px);
+    background-color: rgb(255, 243, 175);
+    top: 65px;
+    text-align: start;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    display: none;
+    margin-right: 40px;
+
+  }
+
+  .item{
+    display: block;
+    line-height: 30px 0 0 0 ;
+    width: 100%;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .menu__item .item :hover{
+    background: none;
+  }
+
+  .menu__item .item .link-item{
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+  }
+
+  .menu__item .item .link-item :hover{
+    color: rgb(0, 18, 0);
+    background-color: rgb(255, 217, 0);
+  }
+
+  .logoBrand{
+    padding-left: 15px;
+    height: 50px;
+
+  }
+  h1{
+
+    font-size: 2rem;
+  }
+  .hero50 p{
+    width: 100%;
+    height: 70%;
+    transform-origin: translateX(-350%);
+  }
+}
+
+
+
+
+@media screen and (max-width: 858px){
+
+
+
+  .menu{
+    height: 65px;
+  }
+
+  .btn__menu{
+    display: inline-flex;
+  }
+
+  .menu__item{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    max-height: calc(100% - 65px);
+    background-color: rgb(195, 255, 0);
+    top: 65px;
+    text-align: start;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    display: none;
+    margin-right: 40px;
+
+  }
+
+  .item{
+    display: block;
+    line-height: 30px 0 0 0 ;
+    width: 100%;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .menu__item .item :hover{
+    background: none;
+  }
+
+  .menu__item .item .link-item{
+    font-size: 20px;
+    color:rgb(9, 3, 3);
+    font-weight: bold;
+  }
+
+  .menu__item .item .link-item :hover{
+    color: rgb(0, 18, 0);
+    background-color: rgb(223, 255, 182);
+  }
+
+  .logoBrand{
+    padding-left: 15px;
+    height: 50px;
+
+  }
+  h1{
+
+    font-size: 2.5rem;
+  }
+
+  .hero50{
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+  }
+
+  .hero50 img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .article-anti{
+    min-height: 300px;
+  }
+
+  .article-anti img{
+    min-width: 150px;
+    object-fit: cover ;
+  }
+
+}
+
+.logoBrand{
+  max-width: 110px;
+  max-height: 50px;
+}
+  .rojo{
+    color: red;
+  }
+
+
+  .poup-up{
+    border-radius: 0;
+  }
+
+
+  .asideBig{
+    display: none;
+
+  }
+
+@media screen and (min-width: 1440px){
+  body{
+    min-width: 1441px;
+    height: 100%;
+    max-height: 130vh;
+  }
+  .asideBig{
+    display: inline-block;
+    background: red;
+height: 100vh;
+    min-width: calc(100% - 1500px);
+    position: fixed;
+    right: 0;
+    top: 0px;
+  }
+}
+
+ </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<header>
+ <nav class="menu">
+    <label><img src="../mi-sitio/img/logo01.png" alt="logo libretaPET" class="logoBrand"/></label>
+    <ul class="menu__item ">
+        <li class="item"><a href="index.html" class="link-item">Home</a></li>
+        <li class="item"><a href="info.html" class="link-item">Info</a></li>
+        <li class="item"><a href="cuidados.html" class="link-item">Cuidados</a></li>
+        <li class="item"><a href="proyecto.html" class="link-item">Proyecto</a></li>
+        <li class="item"><a href="adoptar.html" class="link-item">Adoptar</a></li>
+        <li class="item"><a href="#cadastro" class="link-item">Cadastro</a></li>
+        <li class="item"><a href="snakeGame.html" class="link-item">snakeGame</a></li>
+
+      </ul>
+
+    <span class="btn__menu" id="buttonMenu">
+      <i class="fa fa-bars" ></i>
+    </span>
+</nav>
+   
+<div class="container">
+  <h1>Seccion SALUD</h1>
+</div>
+  
+    </header>
+<div id="content idContent-00">
+ <h2>Seccion SALUD</h2>
+    <main>
+
+
+         <aside>
+      <div class="div-aside">
+        <a href="#article-1" class="aside">
+             <img src="https://placedog.net/50/50/sepia?id=5" alt="" >
+             article-1
+        </a>
+      </div>
+     <div class="div-aside">
+        <a href="#article-2" class="aside">
+             <img src="https://placedog.net/50/50/sepia?id=5" alt="" >
+             article-2
+        </a>
+      </div>
+       <div class="div-aside">
+        <a href="#article-3" class="aside">
+             <img src="https://placedog.net/50/50/sepia?id=5" alt="" >
+             article-3
+        </a>
+      </div>
+    
+  </aside>
+      <section class="section-Main">
+<div class="ul-box-list">
+      <article class="article-Main">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>CASTRACION - MITOS y Ventajas</h3>
+    
+            <div class="article__div-45">
+              <ul class="ul_list-01">
+                  <li>Método anticonceptivo permanente y seguro<br> (aunque irreversible)</li>
+                  <li>Desaparición de los síntomas del celo, como flujo sanguinolento o embarazo psicológico (hembras)</li>
+                  <li>Ausencia de catarro prepucial en machos (secreción lechosa amarillenta)</li>
+                  <li>Protección contra ciertas enfermedades, como tumores mamarios, cáncer de testículo y problemas de próstata; en las hembras, solo con una castración temprana</li>
+                  <li>Disminución de la agresividad relacionada con el instinto sexual; ej., ausencia de agresiones a machos potentes o hembras en celo</li>
+                </ul>
+            </div>
+               <ul class="ul_list-02">
+                    <li>Riesgo general de una intervención invasiva</li>
+                    <li>Intromisión en el equilibrio hormonal natural del animal con amplias consecuencias para el cuerpo y la mente;</li>
+                    <li>Tendencia al sobrepeso y la obesidad <br></li>
+                    <li>Mayor riesgo de incontinencia urinaria <br></li>
+                    <li>Alteración de la estructura capilar <br></li>
+                </ul>
+            </div>
+        </article>
+        </div>
+    </section>
+    </main>
+<div class="content-s2-a">    
+  
+<div class="container">
+  <h2>+ INFO SALUD ANIMAL</h2>
+</div>
+ <section class="section-All">
+
+      <article id="article-1">
+        <img src="https://placedog.net/500/280/random?id=55" alt="" >
+          <div>
+          
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+     
+          </div>
+        </article>
+      
+      <article id="article-2">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #02</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+        </div>
+      </article>
+     <article id="article-3">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. </p>
+          <button class="css-button-neumorphic swal-fire">BUTTON</button>
+      </article>
+  <article id="article-4">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+        </div>
+      </article>
+   
+  
+  </section>
+   <section class="section-All">
+
+      <article id="article-1">
+        <img src="https://placedog.net/500/280/random?id=55" alt="" >
+          <div>
+          
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+     
+          </div>
+        </article>
+      
+      <article id="article-2">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #02</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+        </div>
+      </article>
+     <article id="article-3">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. </p>
+          <button class="css-button-neumorphic swal-fire">BUTTON</button>
+      </article>
+  <article id="article-4">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+        </div>
+      </article>
+   
+  
+  </section>
+   <section class="section-All">
+
+      <article id="article-1">
+        <img src="https://placedog.net/500/280/random?id=55" alt="" >
+          <div>
+          
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+     
+          </div>
+        </article>
+      
+      <article id="article-2">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #02</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+        </div>
+      </article>
+     <article id="article-3">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. </p>
+          <button class="css-button-neumorphic swal-fire">BUTTON</button>
+      </article>
+  <article id="article-4">
+        <img src="https://placedog.net/500/280/sepia?id=5" alt="" >
+        <div>
+          <h3>ARTICULO #03</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+        </div>
+      </article>
+   
+  
+  </section>
+
+<div class="asideBig">
+  <h5>MARKETING</h5>
+</div>
+</div>
+<footer>
+
+  <ul class="social-icons-list">
+    <li>
+      <a href="#title" class="social-link"><i class="fa-solid fa-arrow-up"></i>TOPO</a>
+    </li>
+    <li>
+      <a href="https://github.com/fullstackPhyton" class="social-link" target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
+    </li>
+    <li>
+      <a href="mailto:mendoncabotechia@proton.me" class="social-link"><i class="fab fa-google-plus-g"></i></a>
+    </li>
+  </ul>
+
+</footer>
+
+<script src="../mi-sitio/js/navbar.js"></script>
+<script src="../mi-sitio/js/modal.js"></script>
+
+
+</body>
+</html>
